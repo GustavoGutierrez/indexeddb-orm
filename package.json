@@ -8,13 +8,21 @@
     "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "test": "npm run dev && node_modules/karma/bin/karma start"
   },
   "author": "Max Gaurav max.gaurav@ithands.net",
   "description": "A promise based wrapper for indexedDB",
   "devDependencies": {
+    "@types/jasmine": "^2.8.2",
     "cross-env": "^5.0.2",
+    "jasmine": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
     "laravel-mix": "~1.5.1",
+    "requirejs": "^2.3.5",
     "ts-loader": "~3.1.1",
     "typescript": "~2.5.2"
   },

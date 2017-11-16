@@ -12,10 +12,12 @@
     "moduleResolution": "node",
     "sourceMap": false,
     "target": "es5",
-    "allowJs": true
+    "allowJs": true,
+    "types": ["jasmine"]
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "test/**/*.ts"
   ],
   "exclude": [
     "node_modules"
